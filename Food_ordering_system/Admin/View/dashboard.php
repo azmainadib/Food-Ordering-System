@@ -21,7 +21,7 @@ $res=mysqli_query($conn,"SELECT*FROM food");
             <tr><th>Image</th><th>Name</th><th>Price</th><th>Delete</th></tr>
             <?php while($f=mysqli_fetch_assoc($res)){ ?>
                 <tr>
-                    <td><img src="../Upload/<?= $f['image']?>" width="65"></td>
+                    <td><img src="../Upload/<?= $f['image']?>" width="60"></td>
                     <td><?= $f['name'] ?></td>
                     <td><?= $f['price'] ?></td>
                     <td><a href="deletefood.php?id=<?= $f['id'] ?>">Delete</a></td>

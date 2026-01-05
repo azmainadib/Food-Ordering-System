@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $image = $_FILES["image"]["name"];
         $tmp   = $_FILES["image"]["tmp_name"];
 
-        move_uploaded_file($tmp, "../Uploads/food/" . $image);
+        move_uploaded_file($tmp, "../Uploads" . $image);
 
         $sql = "INSERT INTO food(name, price, image)
                 VALUES ('$name', '$price', '$image')";
