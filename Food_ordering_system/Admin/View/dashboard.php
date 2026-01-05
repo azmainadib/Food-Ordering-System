@@ -1,3 +1,8 @@
+<?php
+include "../DB/db.php";
+$res=mysqli_query($conn,"SELECT*FROM food");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +24,10 @@
                     <td><img src="../Upload/<?= $f['image']?>" width="65"></td>
                     <td><?= $f['name'] ?></td>
                     <td><?= $f['price'] ?></td>
+                    <td><a href="deletefood.php?id=<?= $f['id'] ?>">Delete</a></td>
                 </tr>
-            }
+                <?php } ?>
+
         </table>
     </form>
 </body>
