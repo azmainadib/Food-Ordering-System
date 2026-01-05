@@ -1,3 +1,8 @@
+<?php
+include "../Control/addfood.php";
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
