@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <link rel="stylesheet" href="../CSS/login.css">
     </head>
     <body>
         <form action="">
