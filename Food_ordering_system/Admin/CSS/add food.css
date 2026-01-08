@@ -1,0 +1,52 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(red, green, blue, alpha);
+
+}
+
+h2{
+    text-align: center;
+
+}
+
+form{
+    width: 350px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+input[type="text"]
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+.success{
+    color: green;
+    text-align: center;
+}
+.error{
+    color: red;
+    text-align: center;
+}
+
