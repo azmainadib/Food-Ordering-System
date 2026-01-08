@@ -1,12 +1,8 @@
-<?php
-include "../Control/addfood.php";
-?>
-
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Add Food</title>
+        <link rel="stylesheet" href="../CSS/add food.css">
     </head>
     <body>
         
