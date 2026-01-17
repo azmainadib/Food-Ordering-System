@@ -9,7 +9,7 @@
             <label for="">Email ID:</label>
             <input type="text" placeholder="Enter Email ID"id="in">
             <label for="">Password</label>
-            <input type"password" placeholder="Enter Password" id="in">
+            <input type="password" placeholder="Enter Password" id="in">
 
             <a href=""id="fp">Forgot Password?</a>
             <input type="submit"value="Login"id="sub">
