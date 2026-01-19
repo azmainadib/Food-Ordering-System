@@ -1,35 +1,47 @@
 <?php
 include "../DB/db.php";
 
-$success = "";
-$error = "";
+$success="";
+$error="";
 $imgerr="";
 $imagepath="";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+    $name=$_POST["name"];
+    $price=$_POST["price"];
 
-    $name  = $_POST["name"];
-    $price = $_POST["price"];
-
-    if (empty($name) || empty($price)) {
-        $error = "All fields must be filled";
-    } else {
-
-        $image = $_FILES["image"]["name"];
-        $tmp   = $_FILES["image"]["tmp_name"];
-
-        move_uploaded_file($tmp, "../Uploads" . $image);
-
-        $sql = "INSERT INTO food(name, price, image) VALUES ('$name', '$price', '$image')";
-
-        if ($conn->query($sql)) 
+    if(empty($name)||empty($price))
+    {
+        $error="Fill up all fields";
+    }
+    else
+    {
+        $image= $_FILES["image"]["name"];
+        if(move_uploaded_file($_FILES["image"]["tmp_name"],"../uploads/".$_FILES["image"]["name"]))
         {
-            $success = "Food Added Successfully";
-        } 
-        else 
-        {
-            $error = "Error: " . $conn->error;
+            $imagepath="../uploads/".$_FILES["image"]["name"];
+            $imgerr="File Uploaded.";
         }
+        else
+        {
+            $imgerr="No file is upload.";
+        }
+
+        $sql="INSERT INTO food(name,price,image) VALUES('$name','$price','$imagepath')";
+        if($conn->query($sql))
+        {
+            $success="Food added successfully.";
+        }
+        else
+        {
+            $error="Error: " . $conn->error;
+        }
+
+
     }
 }
+
+
+
 ?>

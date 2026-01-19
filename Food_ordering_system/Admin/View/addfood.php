@@ -14,12 +14,12 @@
     <h2>Add Food</h2>
     <form method="post" enctype="multipart/form-data">
         <label for="">Food name:</label>
-        <input type="text" name="name" id=""><br><br>
+        <input type="text" name="name" id="name"><br><br>
         <label for="">Price:</label>
-        <input type="text" name="price"><br><br>
+        <input type="text" name="price" id="price"><br><br>
         <label for="">Image:</label>
-        <input type="file" name="image"><br><br>
-        <input type="submit" value="Add Food">
+        <input type="file" name="image" id="image"><br><br>
+        <input type="submit" value="Add Food"id="addfood">
 
         <p style="color:green;"><?php echo $success; ?></p>
         <p style="color:red;"><?php echo $error; ?></p>
