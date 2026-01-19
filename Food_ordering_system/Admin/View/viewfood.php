@@ -8,6 +8,7 @@ $res = mysqli_query($conn, "SELECT * FROM food");
 
 <head>
     <title>View food</title>
+    <link rel="stylesheet" href="../CSS/viewfood.css">
 </head>
 
 <body>
@@ -16,6 +17,7 @@ $res = mysqli_query($conn, "SELECT * FROM food");
     <a href="addfood.php">Add Food</a>
     <a href="addvoucher.php">Add Voucher</a>
     <a href="viewvoucher.php">View Voucher</a>
+    <a href="logout.php">logout</a>
     <table border="1">
         <tr>
             <th>Image</th>

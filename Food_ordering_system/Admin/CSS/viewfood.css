@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(245, 247, 250, 1);
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgba(34, 34, 34, 1);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    color: rgba(52, 73, 94, 1);
+}
+
+a:hover {
+    color: rgba(41, 128, 185, 1);
+}
+
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+th {
+    background-color: rgba(52, 152, 219, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    color: rgba(44, 62, 80, 1);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(236, 240, 241, 1);
+}
+
+tr:hover {
+    background-color: rgba(220, 230, 241, 1);
+}
+
+img {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+}
+
+td a {
+    color: rgba(231, 76, 60, 1);
+}
+
+td a:hover {
+    color: rgba(192, 57, 43, 1);
+}
