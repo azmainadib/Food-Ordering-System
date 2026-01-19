@@ -1,51 +1,75 @@
-form{
-    background-color: rgba(145, 147, 162, 0.225);
-    width: 400px;
-    height: 600px;
-    padding: auto;
-    border-radius: 10px;
-    margin: auto;
-}
-#in{
-    color: black;
-    background-color: rgba(142, 205, 180, 0.8);
-    width: 90%;
-    padding: 8px;
-    margin: 5px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border-color: 1px solid ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#reg{
-    display: block;
-    background-color: rgb(135, 194, 204);
-    margin: 15px auto;
-    margin-top: 30px;
-    width: 170px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-}
-#li{
-    display: block;
-    text-align: center;
-}
-label{
-    margin: 5px;
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 233, 233, 1);
+    font-family: Arial, sans-serif;
 }
 
-h1{
-    text-align: center;
-    padding-top: 25px;
+form {
+    width: 380px;
+    background-color: rgba(145, 147, 162, 0.25);
+    padding: 25px;
+    border-radius: 12px;
 }
-.setimg{
-    position: fixed;
-    top: 0px;
-    left: 0px;    
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid rgba(150, 150, 150, 1);
+    background-color: rgba(201, 168, 229, 0.8);
+    font-size: 14px;
 }
 
+#reg {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(126, 123, 207, 1);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reg:hover {
+    background-color: rgba(105, 102, 185, 1);
+}
+
+#li {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(60, 60, 60, 1);
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+    color: salmon;
+}

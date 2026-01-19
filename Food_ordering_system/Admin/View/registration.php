@@ -1,30 +1,39 @@
+<?php include "../Controller/registration.php"; ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../CSS/registration.css">
+<head>
+    <link rel="stylesheet" href="../CSS/registration.css">
+</head>
+<body>
 
-    </head>
-    <body>
-        <form action="">
-            <h1>Registration From</h1>
-            <label for="">Name:</label>
-            <input type="text"placeholder="Enter Your Name"id="in">
-            <label for="">Address:</label>
-            <input type="text"placeholder="Enter Your Address"id="in">
-            <label for=""Mobile Number:></label>
-            <input type="tel"placeholder="Enter Mobile Number:"id="in">
-            <label for=""Email:></label>
-            <input type="email"placeholder="Enter Email Address:"id="in">
-            <label for=""Password:></label>
-            <input type="passwor"placeholder="Enter Password:"id="in">
-            <label for=""Confirm Password:></label>
-            <input type="password"placeholder="Enter Password:"id="in">
+<form method="post">
+    <h1>Registration Form</h1>
 
-            <input type ="submit"value="Register"id="reg">
-            <a href="../view/userlogin.php"id="li">Already have an account?</a>
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter Your Name" id="name">
 
-        </form>
-        
-    </body>
+    <label>Address:</label>
+    <input type="text" name="address" placeholder="Enter Your Address" id="address">
 
+    <label>Mobile Number:</label>
+    <input type="tel" name="mobile" placeholder="Enter Mobile Number" id="mobile">
+
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter Email Address" id="email">
+
+    <label>Password:</label>
+    <input type="password" name="password" placeholder="Enter Password" id="password">
+
+    <label>Confirm Password:</label>
+    <input type="password" name="cpassword" placeholder="Confirm Password" id="cpassword">
+
+    <input type="submit" value="Register" id="reg">
+
+    <a href="../View/login.php" id="li">Already have an account?</a>
+
+    <p><?php echo $error; ?></p>
+    <p><?php echo $success; ?></p>
+</form>
+
+</body>
 </html>

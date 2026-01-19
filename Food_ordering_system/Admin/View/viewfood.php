@@ -14,11 +14,11 @@ $res = mysqli_query($conn, "SELECT * FROM food");
 <body>
     <h2>View food</h2>
         <form action="" id="links">
-                    <a href="adminhome.php">Home</a>
         <a href="addfood.php">Add Food</a>
         <a href="addvoucher.php">Add Voucher</a>
         <a href="viewvoucher.php">View Voucher</a>
                 <a href="viewfood.php">View Food</a>
+                <a href="registration.php">Add Admin</a>
 
         </form>
     <table border="1">

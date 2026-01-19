@@ -8,7 +8,6 @@
 
 <body>
         <form action="" id="links">
-                    <a href="adminhome.php">Home</a>
         <a href="addfood.php">Add Food</a>
         <a href="addvoucher.php">Add Voucher</a>
         <a href="viewvoucher.php">View Voucher</a>

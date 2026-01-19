@@ -13,11 +13,11 @@ $res = mysqli_query($conn, "SELECT * FROM voucher");
 
 <body>
         <form action="" id="links">
-                    <a href="adminhome.php">Home</a>
         <a href="addfood.php">Add Food</a>
         <a href="addvoucher.php">Add Voucher</a>
         <a href="viewvoucher.php">View Voucher</a>
                 <a href="viewfood.php">View Food</a>
+                
 
         </form>
 
