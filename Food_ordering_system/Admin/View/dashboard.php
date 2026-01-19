@@ -6,11 +6,11 @@
     </head>
     <body>
         <header>
-            <h1>Food Ordering System</h1>
-            <a href="login.php" id="btn 1">Sign in</a>
-            <a href="registration.php" id="btn 2">Sign up</a>
+            <h2>Food Ordering System</h2>
+            <a href="login.php" id="btn1">Sign in</a>
+            <a href="registration.php" id="btn2">Sign up</a>
         </header>
-        <h2>Welcome</h2>
+        <h1>WELCOME</h1>
         <footer>Food Ordering System</footer>
     </body>
 </html>

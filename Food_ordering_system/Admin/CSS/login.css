@@ -1,60 +1,71 @@
-form{
+form {
     background-color: rgba(145, 147, 162, 0.225);
     width: 300px;
     height: 350px;
-    margin-top: 180px;
-    padding: auto;
+    margin: 180px auto;
+    padding: 15px;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-body{
-    background-color: rgb(251, 233, 233);
 }
 
-h1{
+body {
+    background-color: rgba(251, 233, 233, 1);
+}
+
+h1 {
     text-align: center;
     padding-top: 25px;
 }
-#in{
-    color: black;
+
+#email,
+#password {
+    color: rgba(0, 0, 0, 1);
     background-color: rgba(201, 168, 229, 0.8);
     width: 90%;
     padding: 8px;
     margin: 5px;
     margin-top: 10px;
     border-radius: 5px;
-    border-color: 1px solid ;
+    border: 1px solid rgba(150, 150, 150, 1);
 }
-#sub{
+
+#sub {
     display: block;
-    margin: 15px auto;
-    margin-top: 30px;
+    margin: 30px auto 15px auto;
     width: 170px;
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(126, 123, 207);
+    background-color: rgba(126, 123, 207, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
-#fp{
-    text-align: right;
-    display: block;
-    margin-right: 5px;
 
+#sub:hover {
+    background-color: rgba(105, 102, 185, 1);
 }
-#reg{
+
+#fp {
+    display: block;
+    text-align: right;
+    margin-right: 5px;
+    color: rgba(60, 60, 60, 1);
+}
+
+#reg {
     display: block;
     text-align: center;
-
+    color: rgba(60, 60, 60, 1);
 }
-label{
+
+label {
     margin: 5px;
+    display: block;
 }
 
-.setimg{
+.setimg {
     position: fixed;
-    top: 0px;
-    left: 0px;    
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;

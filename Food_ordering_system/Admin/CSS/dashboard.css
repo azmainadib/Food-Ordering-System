@@ -8,7 +8,7 @@ header{
     display: flex;
     align-items: center;
 }
-h1{
+h2{
     padding-right: 70%;
 }
 
@@ -27,7 +27,7 @@ h1{
     color: white;
     background: rgb(55, 224, 72);
 }
-h2{
+h1{
     text-align: center;
     margin-top: 80px;
 }
