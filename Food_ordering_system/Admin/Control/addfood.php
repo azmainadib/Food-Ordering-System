@@ -3,6 +3,8 @@ include "../DB/db.php";
 
 $success = "";
 $error = "";
+$imgerr="";
+$imagepath="";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -18,12 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         move_uploaded_file($tmp, "../Uploads" . $image);
 
-        $sql = "INSERT INTO food(name, price, image)
-                VALUES ('$name', '$price', '$image')";
+        $sql = "INSERT INTO food(name, price, image) VALUES ('$name', '$price', '$image')";
 
-        if ($conn->query($sql)) {
+        if ($conn->query($sql)) 
+        {
             $success = "Food Added Successfully";
-        } else {
+        } 
+        else 
+        {
             $error = "Error: " . $conn->error;
         }
     }
