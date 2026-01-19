@@ -1,3 +1,8 @@
+<?php
+include "../controller/addfood.php";
+$res=mysqli_query($conn,"SELECT * FROM food");
+?>
+
 <!DOCTYPE html>
 <html>
 
