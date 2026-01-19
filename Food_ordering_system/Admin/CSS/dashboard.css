@@ -1,0 +1,13 @@
+body{
+    margin:0;
+    background-color: rgb(122, 69, 69);
+}
+header{
+    background-color: rgb(43, 47, 87);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+h1{
+    padding-right: 70%;
+}
