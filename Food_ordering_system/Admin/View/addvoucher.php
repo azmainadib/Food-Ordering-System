@@ -5,14 +5,20 @@
 <html>
     <head>
         <title>Add vaucher</title>
+        <link rel="stylesheet" href="../CSS/addvoucher.css">
     </head>
     <body>
-        <a href="adminhome.php">Home</a>
+        <form action="" id="links">
+                    <a href="adminhome.php">Home</a>
         <a href="addfood.php">Add Food</a>
         <a href="addvoucher.php">Add Voucher</a>
         <a href="viewvoucher.php">View Voucher</a>
+                <a href="viewfood.php">View Food</a>
+
+        </form>
+
         
-    <form action = "" method="post">
+    <form action = "" method="post" id="voucherFrom">
         <h2>Add voucher</h2>
         <label for="">code:</label>
         <input type="text" name="code">

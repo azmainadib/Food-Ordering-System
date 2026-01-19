@@ -12,14 +12,14 @@ $res = mysqli_query($conn, "SELECT * FROM voucher");
 </head>
 
 <body>
+        <form action="" id="links">
+                    <a href="adminhome.php">Home</a>
+        <a href="addfood.php">Add Food</a>
+        <a href="addvoucher.php">Add Voucher</a>
+        <a href="viewvoucher.php">View Voucher</a>
+                <a href="viewfood.php">View Food</a>
 
-    <div id="menu">
-        <a href="adminhome.php" class="menu-link">Home</a>
-        <a href="addfood.php" class="menu-link">Add Food</a>
-        <a href="addvoucher.php" class="menu-link">Add Voucher</a>
-        <a href="viewvoucher.php" class="menu-link">View Voucher</a>
-        <a href="viewfood.php" class="menu-link">View Food</a>
-    </div>
+        </form>
 
     <h2 id="page-title">Voucher List</h2>
 

@@ -7,12 +7,15 @@
 </head>
 
 <body>
-    <a href="adminhome.php">Home</a>
-    <a href="addfood.php">Add Food</a> |
-    <a href="addvoucher.php">Add Voucher</a> |
-    <a href="viewvoucher.php">View Voucher</a>
+        <form action="" id="links">
+                    <a href="adminhome.php">Home</a>
+        <a href="addfood.php">Add Food</a>
+        <a href="addvoucher.php">Add Voucher</a>
+        <a href="viewvoucher.php">View Voucher</a>
+        <a href="viewfood.php">View Food</a>
+        </form>
     <h2>Add Food</h2>
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" id="form">
         <label for="">Food name:</label>
         <input type="text" name="name" id="name"><br><br>
         <label for="">Price:</label>
