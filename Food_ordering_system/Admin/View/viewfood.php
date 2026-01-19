@@ -1,6 +1,6 @@
 <?php
 include "../controller/addfood.php";
-$res=mysqli_query($conn,"SELECT * FROM food");
+$res = mysqli_query($conn, "SELECT * FROM food");
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +11,11 @@ $res=mysqli_query($conn,"SELECT * FROM food");
 </head>
 
 <body>
+    <h2>View food</h2>
+    <a href="adminhome.php">Home</a>
+    <a href="addfood.php">Add Food</a>
+    <a href="addvoucher.php">Add Voucher</a>
+    <a href="viewvoucher.php">View Voucher</a>
     <table border="1">
         <tr>
             <th>Image</th>
