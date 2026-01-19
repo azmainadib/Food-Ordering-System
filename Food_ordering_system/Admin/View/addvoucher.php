@@ -1,4 +1,4 @@
-<?php include "../Control/addvaucher.php";
+<?php include "../Controller/addvaucher.php";
 
 ?>
 <!DOCTYPE html>
