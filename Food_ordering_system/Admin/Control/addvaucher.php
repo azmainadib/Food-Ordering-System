@@ -2,7 +2,7 @@
 include "../DB/db.php";
 
 $error="";
-
+$success="";
 
 if($_SERVER["REQUEST_METHOD"]=="POST")
     {

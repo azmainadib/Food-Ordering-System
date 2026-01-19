@@ -1,4 +1,4 @@
-<?php include "../project/Food_ordering_system/Admin/Control/addvaucher.php";
+<?php include "../Control/addvaucher.php";
 
 ?>
 <!DOCTYPE html>
